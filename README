@@ -1,1 +1,8 @@
-Testing out a simple angular js app.
+Building a simple app to evaluate some js libs that I have not used much before.
+
+Current list of libraries:
+
+- Angular
+- Angular UI with Bootstrap
+- Karma
+- Jasmine
