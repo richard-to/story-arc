@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="">
+<html lang="en" ng-app="app">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <title>Story Arc</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="/static/lib/bootstrap/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="/static/lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
         <link href="/static/css/main.css" rel="stylesheet" type="text/css" />
     </head>
-    <body ng-controller="">
+    <body ng-controller="AppCtrl">
+        <div ng-include="'/static/js/app/header.tpl.html'"></div>
         <div ng-view></div>
+
         <script src="/static/lib/jquery.js"></script>
         <script src="/static/lib/underscore.js"></script>
         <script src="/static/lib/angular/angular.js"></script>
         <script src="/static/lib/angular/angular-bootstrap.js"></script>
+        <script src="/static/js/app/app.js"></script>
+        <script src="/static/js/app/home/home.js"></script>
     </body>
 </html>
