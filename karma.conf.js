@@ -9,11 +9,7 @@ basePath = '';
 // list of files / patterns to load in the browser
 files = [
   JASMINE,
-  JASMINE_ADAPTER,
-  'src/Player.js',
-  'src/Song.js',
-  'spec/SpecHelper.js',
-  'spec/PlayerSpec.js'
+  JASMINE_ADAPTER
 ];
 
 
