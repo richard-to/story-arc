@@ -1,6 +1,6 @@
 {
     "author": "Richard To",
-    "name": "story-arc",
+    "name": "story-ark",
     "version": "0.0.0",
     "devDependencies": {
         "grunt": "~0.4.0",
@@ -12,6 +12,7 @@
         "grunt-contrib-copy": "~0.4.0",
         "grunt-contrib-cssmin": "~0.5.0",
         "grunt-contrib-watch": "~0.4.0",
-        "grunt-karma": "~0.5.0"
+        "grunt-contrib-concat": "~0.3.0",
+        "grunt-karma": "~0.4.0"
     }
 }

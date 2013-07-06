@@ -82,6 +82,16 @@ module.exports = function(grunt) {
             ]
         },
 
+        concat: {
+            index: {
+                src: ['src/templates/index.html'],
+                dest: '<%= distdir %>/index.html',
+                options: {
+                    process: true
+                }
+            }
+        },
+
         sass: {
             dist: {
                 options: {
