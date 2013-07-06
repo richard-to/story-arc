@@ -8,9 +8,9 @@ basePath = '';
 
 // list of files / patterns to load in the browser
 files = [
- ANGULAR_SCENARIO,
+  ANGULAR_SCENARIO,
   ANGULAR_SCENARIO_ADAPTER,
-  'src/static/js/**/*.spec.js'
+  'test/client/e2e/**/*.spec.js'
 ];
 
 
@@ -22,7 +22,7 @@ exclude = [
 urlRoot = '/__karma/';
 
 proxies = {
-  '/': 'http://localhost:5000/'
+  '/': 'http://localhost:8080/'
 };
 
 // test results reporter to use
@@ -31,11 +31,11 @@ reporters = ['progress'];
 
 
 // web server port
-port = 9876;
+port = 9877;
 
 
 // cli runner port
-runnerPort = 9100;
+runnerPort = 9101;
 
 
 // enable / disable colors in the output (reporters and logs)
@@ -48,7 +48,7 @@ logLevel = LOG_INFO;
 
 
 // enable / disable watching file and executing tests whenever any file changes
-autoWatch = true;
+autoWatch = false;
 
 
 // Start these browsers, currently available:
@@ -59,7 +59,7 @@ autoWatch = true;
 // - Safari (only Mac)
 // - PhantomJS
 // - IE (only Windows)
-browsers = ['PhantomJS'];
+browsers = ['Chrome'];
 
 
 // If browser does not capture in given timeout [ms], kill it
