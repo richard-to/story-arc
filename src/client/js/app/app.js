@@ -1,18 +1,15 @@
 angular.module('app', [
-    'home'
+    'home',
+    'story'
 ]);
 
-angular.module('app').config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+angular.module('app').config(function($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(false);
     $routeProvider.otherwise({
-        redirectTo: "/"
+        redirectTo: "/#"
     });
-}]);
+});
 
-angular.module('app').controller('AppCtrl', ['$scope', function($scope) {
+angular.module('app').controller('AppCtrl', function($scope) {
     $scope.title = 'Story Ark';
-}]);
-
-angular.module('app').controller('HeaderCtrl', ['$scope', function($scope) {
-
-}]);
+});
