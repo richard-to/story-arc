@@ -11,8 +11,25 @@
         <link href="/css/main.css" rel="stylesheet" type="text/css" />
     </head>
     <body ng-controller="AppCtrl">
-        <div ng-include="'/js/app/header.tpl.html'"></div>
-        <div ng-view></div>
+
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="brand" href="/#">Story Ark</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="/#/story">Write a story</a></li>
+                            <li><a href="/#/about">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div ng-view></div>
+        </div>
+
         <script src="/js/jquery.js"></script>
         <script src="/js/jquery-ui.js"></script>
         <script src="/js/jquery.ui.sortable.js"></script>
@@ -22,6 +39,7 @@
         <script src="/js/angular-resource.js"></script>
         <script src="/js/sortable.js"></script>
         <script src="/js/app/home/home.js"></script>
+        <script src="/js/app/story/story.js"></script>
         <script src="/js/app/app.js"></script>
     </body>
 </html>
