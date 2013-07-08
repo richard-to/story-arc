@@ -1,0 +1,16 @@
+<div class="row-fluid">
+    <div class="span12">
+        <p>
+            <button ng-click="new()" class="btn btn-primary">New Story</button>
+        </p>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+        <ul>
+            <li ng-repeat="story in stories">
+                {{story.title}}
+            </li>
+        </ul>
+    </div>
+</div>
